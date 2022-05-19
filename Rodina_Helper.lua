@@ -498,7 +498,7 @@ function main()
             if status == dlstatus.STATUS_ENDDOWNLOADDATA then
                 updateIni = inicfg.load(nil,update_path)
                 if tonumber(updateIni.info.vers) > script_vers then
-                    sampAddChatMessage("{ff0000}[Rodina Helper]{ffffff}: Доступна новая версия ({ff0000}".. updateIni.info.vers_text .."{ffffff})! Текущая версия: {ff0000}"..script_vers_text"{ffffff}.", -1)
+                    sampAddChatMessage("{ff0000}[Rodina Helper]{ffffff}: Доступна новая версия ({ff0000}".. updateIni.info.vers_text .."{ffffff})! Текущая версия: {ff0000}"..script_vers_text.."{ffffff}.", -1)
                     update_state = true
                 else
                     sampAddChatMessage("{ff0000}[Rodina Helper]{ffffff}: У вас установлена новейшая версия скрипта ({ff0000}".. script_vers_text .."{ffffff})!", -1)

@@ -413,7 +413,7 @@ local script_vers_text = "0.0.1"
 local update_url = "https://raw.githubusercontent.com/sVor-LUA/Rodina-Helper/main/update.ini"
 local update_path = getWorkingDirectory() .. "/update.ini"
 
-local script_url = "https://github.com/sVor-LUA/Rodina-Helper/blob/main/Rodina_Helper.luac?raw=true"
+local script_url = "https://github.com/sVor-LUA/Rodina-Helper/blob/main/Rodina_Helper.lua?raw=true"
 local script_path = thisScript().path
 ---
 
@@ -523,7 +523,6 @@ function main()
                     thisScript():reload()
                 end
             end)
-            break
         end
 
         if main_window_state.v or biography_window_state.v or settings_window_state_one.v or settings_window_state_two.v or helpChatWindow.v or calcWindow.v then -- окна с курсорам
